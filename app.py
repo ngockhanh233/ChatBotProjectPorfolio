@@ -8,9 +8,9 @@ CORS(app)  # Allow CORS for frontend
 # Load model once when server starts
 try:
     load_model("model.pkl")
-    print("✅ Model loaded successfully!")
+    print("Model loaded successfully!")
 except Exception as e:
-    print(f"❌ Failed to load model: {e}")
+    print(f"Failed to load model: {e}")
 
 
 @app.route('/', methods=['GET'])

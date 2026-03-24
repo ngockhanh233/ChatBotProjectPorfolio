@@ -11,19 +11,19 @@ with open("data.txt", "r", encoding="utf8") as f:
 
         # Bỏ qua dòng trống
         if not line:
-            print("⚠ Bỏ qua dòng trống")
+            print("Canh bao: Bo qua dong trong")
             continue
 
         # Kiểm tra có dấu phân tách hay không
         if "|||" not in line:
-            print("⚠ Dòng sai định dạng, không có '|||':", line)
+            print("Canh bao: Dong sai dinh dang, khong co '|||':", line)
             continue
 
         parts = line.split("|||")
 
         # Dòng phải có đúng 2 phần (câu hỏi và câu trả lời)
         if len(parts) != 2:
-            print("⚠ Dòng sai định dạng (thừa hoặc thiếu '|||'):", line)
+            print("Canh bao: Dong sai dinh dang (thua hoac thieu '|||'):", line)
             continue
 
         q, a = parts
@@ -31,7 +31,7 @@ with open("data.txt", "r", encoding="utf8") as f:
         a = a.strip()
 
         if q == "" or a == "":
-            print("⚠ Bỏ qua dòng thiếu nội dung:", line)
+            print("Canh bao: Bo qua dong thieu noi dung:", line)
             continue
 
         questions.append(q)
@@ -39,7 +39,7 @@ with open("data.txt", "r", encoding="utf8") as f:
 
 # Đảm bảo có dữ liệu hợp lệ
 if len(questions) == 0:
-    raise ValueError("❌ Không có dữ liệu hợp lệ trong data.txt")
+    raise ValueError("Loi: Khong co du lieu hop le trong data.txt")
 
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(questions)
@@ -49,5 +49,5 @@ model.fit(X)
 
 pickle.dump((vectorizer, model, answers), open("model.pkl", "wb"))
 
-print("✅ Huấn luyện xong! Đã lưu model.pkl")
-print(f"📌 Tổng số câu hỏi hợp lệ: {len(questions)}")
+print("Huan luyen xong! Da luu model.pkl")
+print(f"Tong so cau hoi hop le: {len(questions)}")

@@ -1,122 +1,180 @@
 # ChatBot Web API
 
-Dự án ChatBot sử dụng Web API với Flask, sử dụng mô hình Machine Learning để trả lời câu hỏi tự động.
+A ChatBot project using Web API with Flask, utilizing Machine Learning models to automatically answer questions.
 
-## Cài đặt
+## Installation
 
-1. Cài đặt các dependencies:
+1. Install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Đảm bảo file `model.pkl` đã được tạo (nếu chưa có, chạy `train.py`):
+2. Ensure the `model.pkl` file is created (if not, run `train.py`):
 ```bash
 python train.py
 ```
 
-## Chạy API Server
+## Running the API Server
 
+### Development (Local)
 ```bash
 python app.py
 ```
 
-API sẽ chạy tại `http://localhost:5000`
+### Production (Railway/Heroku)
+```bash
+python main.py
+```
+
+The API will run at `http://localhost:5000` (or the port specified in the PORT environment variable)
 
 ## API Endpoints
 
-### 1. Kiểm tra trạng thái
+### 1. Home
+**GET** `/`
+
+Response:
+```json
+{
+  "message": "ChatBot API is running",
+  "endpoints": {
+    "/api/chat": "POST - Send question and receive answer",
+    "/health": "GET - Check API status"
+  }
+}
+```
+
+### 2. Health Check
 **GET** `/health`
 
 Response:
 ```json
 {
   "status": "healthy",
-  "message": "API đang hoạt động bình thường"
+  "message": "API is operating normally"
 }
 ```
 
-### 2. Chat với bot
+### 3. Chat with Bot
 **POST** `/api/chat`
 
 Request Body:
 ```json
 {
-  "message": "đặt hàng như thế nào"
+  "message": "What is your name?"
 }
 ```
 
-hoặc
+or
 
 ```json
 {
-  "question": "đặt hàng như thế nào"
+  "question": "What is your name?"
 }
 ```
 
-Response thành công:
+Success Response:
 ```json
 {
   "success": true,
-  "question": "đặt hàng như thế nào",
-  "answer": "Bạn có thể đặt hàng trực tiếp trên website hoặc gọi tổng đài để được hỗ trợ."
+  "question": "What is your name?",
+  "answer": "I'm Thu Hang, how can I help you?"
 }
 ```
 
-Response lỗi:
+Error Response:
 ```json
 {
-  "error": "Thiếu câu hỏi",
-  "message": "Vui lòng cung cấp trường 'message' hoặc 'question'"
+  "error": "Missing question",
+  "message": "Please provide the 'message' or 'question' field"
 }
 ```
 
-## Ví dụ sử dụng
+## Usage Examples
 
-### Sử dụng curl:
+### Using curl:
 ```bash
 curl -X POST http://localhost:5000/api/chat \
   -H "Content-Type: application/json" \
-  -d '{"message": "đặt hàng như thế nào"}'
+  -d '{"message": "What is your current position?"}'
 ```
 
-### Sử dụng Python:
+### Using Python:
 ```python
 import requests
 
-response = requests.post('http://localhost:5000/api/chat', 
-                        json={'message': 'đặt hàng như thế nào'})
+response = requests.post('http://localhost:5000/api/chat',
+                        json={'message': 'What skills do you have?'})
 print(response.json())
 ```
 
-### Sử dụng JavaScript (fetch):
+### Using JavaScript (fetch):
 ```javascript
 fetch('http://localhost:5000/api/chat', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
   },
-  body: JSON.stringify({ message: 'đặt hàng như thế nào' })
+  body: JSON.stringify({ message: 'Tell me about your projects?' })
 })
 .then(response => response.json())
 .then(data => console.log(data));
 ```
 
-## Cấu trúc dự án
+## Project Structure
 
-- `app.py` - File chính chứa Flask API
-- `chat_logic.py` - Logic xử lý chat, gọi model
-- `model.py` - Module load và train model
-- `train.py` - Script để train model từ data.txt
-- `data.txt` - Dữ liệu training (câu hỏi và câu trả lời)
-- `model.pkl` - File model đã được train
+- `main.py` - Main entry point for deployment (Railway/Heroku)
+- `app.py` - Main Flask API with CORS support
+- `chat_logic.py` - Chat processing logic, calls model
+- `model.py` - Module to load and train model
+- `train.py` - Script to train model from data.txt
+- `test_model.py` - Direct model testing script
+- `test_api.py` - API endpoints testing script
+- `data.txt` - Training data (questions and answers)
+- `model.pkl` - Trained model file
+- `Procfile` - Deployment configuration for Heroku/Railway
+- `requirements.txt` - Python dependencies
 
-## Biến môi trường
+## Environment Variables
 
-- `PORT`: Port để chạy server (mặc định: 5000)
-- `MODEL_FILE`: Đường dẫn đến file model (mặc định: model.pkl)
+- `PORT`: Port to run the server (default: 5000)
+- `MODEL_FILE`: Path to the model file (default: model.pkl)
 
-## Lưu ý
+## Testing
 
-- Đảm bảo file `model.pkl` tồn tại trước khi chạy API
-- Nếu thay đổi `data.txt`, cần train lại model bằng `train.py`
+### Test Model Directly
+```bash
+python test_model.py
+```
+
+### Test API Endpoints
+```bash
+python test_api.py
+```
+
+## Deployment
+
+The project is configured for deployment on cloud platforms:
+
+- **Railway**: Uses `main.py` as entry point
+- **Heroku**: Uses `Procfile` with gunicorn
+- **Local**: Run `python app.py` for development
+
+## Dependencies
+
+- **Flask>=3.0.0**: Main web framework
+- **flask-cors>=4.0.0**: CORS support for frontend
+- **scikit-learn>=1.3.0**: Machine Learning
+- **numpy>=1.24.0**: Numerical processing
+- **scipy>=1.11.0**: Scientific computing
+- **requests>=2.31.0**: HTTP requests
+- **gunicorn>=21.2.0**: WSGI server for production
+
+## Notes
+
+- API supports CORS to allow calls from frontend
+- Ensure `model.pkl` file exists before running the API
+- If `data.txt` is changed, retrain the model using `train.py`
+- Use `main.py` for production deployment
+- Use `app.py` only for local development
 
