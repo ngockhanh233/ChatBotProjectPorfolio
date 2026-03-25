@@ -28,20 +28,23 @@ bạn bao nhiêu tuổi|||Tôi 23 tuổi (tính theo năm hiện tại).
 bạn học trường đại học nào|||Tôi tốt nghiệp trường Đại học Ngoại Ngữ - Tin học TP.HCM (HUFLIT).
 giới thiệu bản thân|||Tôi tên Trần Ngọc Khánh, sinh năm 2003, tốt nghiệp HUFLIT và học THPT Tánh Linh.
 thông tin cá nhân của bạn|||Tôi là Trần Ngọc Khánh, sinh năm 2003, tốt nghiệp HUFLIT và THPT Tánh Linh.
+bạn có bao nhiêu năm kinh nghiệm|||Hiện tại tôi đã có hơn 1 năm đi làm và tham gia các dự án ở công ty.
+công ty của bạn|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
+bạn đang làm cho công ty nào|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
+bạn đang làm việc ở đâu|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
+bạn làm vị trí gì ở công ty|||Tôi làm vị trí Web developer và sử dụng PHP Laravel để phát triển dự án.
+công nghệ bạn sử dụng|||Các công nghệ chính tôi sử dụng trong công việc là Laravel (PHP), React Native và ReactJS, ngoài ra tôi cũng có biết một số công nghệ khác như ASP.NET Core (C#), Flutter (Dart), Android Native (Java)...
 kinh nghiệm làm developer của bạn|||Tôi có kinh nghiệm phát triển web với Laravel (PHP) và MySQL trong việc xây dựng backend, bao gồm phát triển API và xử lý dữ liệu. Ngoài ra, tôi cũng có kinh nghiệm với React Native để phát triển ứng dụng mobile và làm việc nhóm để fix bug, cải thiện hệ thống.
 bạn đến từ đâu|||Tôi đến từ Lâm Đồng (Bình Thuận cũ).
 bạn làm nghề gì|||Tôi là một software developer, chuyên ngành Công nghệ phần mềm.
 bạn giỏi ngôn ngữ lập trình nào|||Tôi sử dụng các ngôn ngữ như PHP, C#, TypeScript, JavaScript để xây dựng và phát triển các dự án.
 bạn từng làm những dự án gì|||Bạn có thể tham khảo các dự án trong CV của tôi nhé.
 bạn chuyên về mảng nào trong lập trình|||Tôi tập trung vào phát triển web và app, đồng thời có nền tảng trong phân tích và thiết kế hệ thống và design UX/UI.
-kỹ năng lập trình của bạn|||Tôi có kỹ năng về frontend, backend cơ bản, xử lý dữ liệu và sử dụng các công cụ lập trình phổ biến.
 bạn có dùng framework nào không|||Tôi có kinh nghiệm với một số framework như Laravel, ReactJS, React Native,...
 mục tiêu nghề nghiệp của bạn|||Tôi muốn phát triển trở thành một developer chuyên nghiệp, nâng cao kỹ năng và tham gia các dự án lớn hơn trong tương lai.
 bạn có thể làm việc nhóm không|||Tôi có kinh nghiệm làm việc nhóm trong các project ở công ty và luôn sẵn sàng phối hợp để hoàn thành sản phẩm tốt nhất.
 bạn có làm freelance không|||Tôi có thể nhận các dự án nhỏ phù hợp với khả năng và thời gian của mình.
 bạn có tự học thêm công nghệ mới không|||Có, tôi thường xuyên tự học qua tài liệu online để nâng cao kỹ năng lập trình và cập nhật công nghệ mới.
-bạn đang làm việc ở đâu|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
-bạn làm vị trí gì ở công ty|||Tôi làm vị trí Web developer và sử dụng PHP Laravel để phát triển dự án.
 kỹ năng của bạn là gì|||Kỹ năng chính của tôi là phát triển web với PHP Laravel, xây dựng ứng dụng mobile bằng React Native. Ngoài ra tôi cũng có thể thiết kế 2D với Figma, Canva, Adobe Photoshop.
 liên hệ với bạn bằng cách nào|||Bạn có thể liên hệ với tôi qua email: ngockhanh23032003@gmail.com.
 câu hỏi khác|||Nếu bạn cần biết thêm điều gì, cứ hỏi tôi nhé.
