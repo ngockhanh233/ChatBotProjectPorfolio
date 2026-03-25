@@ -31,7 +31,7 @@ thông tin cá nhân của bạn|||Tôi là Trần Ngọc Khánh, sinh năm 2003
 bạn có bao nhiêu năm kinh nghiệm|||Hiện tại tôi đã có hơn 1 năm đi làm và tham gia các dự án ở công ty.
 công ty của bạn|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
 bạn đang làm cho công ty nào|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
-bạn đang làm việc ở đâu|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
+bạn đang làm việc|||Hiện tại tôi đang làm fulltime tại công ty Cổ phần Dịch vụ Phần mềm BSP.
 bạn làm vị trí gì ở công ty|||Tôi làm vị trí Web developer và sử dụng PHP Laravel để phát triển dự án.
 công nghệ bạn sử dụng|||Các công nghệ chính tôi sử dụng trong công việc là Laravel (PHP), React Native và ReactJS, ngoài ra tôi cũng có biết một số công nghệ khác như ASP.NET Core (C#), Flutter (Dart), Android Native (Java)...
 kinh nghiệm làm developer của bạn|||Tôi có kinh nghiệm phát triển web với Laravel (PHP) và MySQL trong việc xây dựng backend, bao gồm phát triển API và xử lý dữ liệu. Ngoài ra, tôi cũng có kinh nghiệm với React Native để phát triển ứng dụng mobile và làm việc nhóm để fix bug, cải thiện hệ thống.
@@ -48,6 +48,7 @@ bạn có tự học thêm công nghệ mới không|||Có, tôi thường xuyê
 kỹ năng của bạn là gì|||Kỹ năng chính của tôi là phát triển web với PHP Laravel, xây dựng ứng dụng mobile bằng React Native. Ngoài ra tôi cũng có thể thiết kế 2D với Figma, Canva, Adobe Photoshop.
 liên hệ với bạn bằng cách nào|||Bạn có thể liên hệ với tôi qua email: ngockhanh23032003@gmail.com.
 câu hỏi khác|||Nếu bạn cần biết thêm điều gì, cứ hỏi tôi nhé.
+đi diễn|||Tôi từng biểu diễn tại các chương trình lớn nhỏ như đám cưới, tiệc thôi nôi, sinh nhật, tiệc công ty và nhiều sự kiện trong trường đại học, ngoài ra tôi còn biểu diễn ở nhiều sân khấu acoustic ở các quán cafe.
 những show diễn của bạn|||Tôi từng biểu diễn tại các chương trình lớn nhỏ như đám cưới, tiệc thôi nôi, sinh nhật, tiệc công ty và nhiều sự kiện trong trường đại học như : "Huflit Radio, Blooming, Huflit Open Day, ngoài ra tôi còn biểu diễn ở nhiều sân khấu acoustic ở các quán cafe.
 bạn biểu diễn với vai trò gì|||Tôi biểu diễn với vai trò là guitar bass và guitar acoustic.
 dòng nhạc bạn chơi|||Tôi chơi đa thể loại nhạc, từ ballad, pop, R&B, rock,....
